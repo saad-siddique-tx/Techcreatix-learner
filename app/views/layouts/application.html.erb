@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TechcreatixLearner</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render '../views/shared/top-navbar'%>
+
+    <br>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <p style="color: #4b4949;">CONTENTS </p>
+      <p><a href="#pre" style="color: #807a7a;">Prerequisites?</a></p>
+      <p><a href="#Setting" style="color: #807a7a;">Device Setup for rails?</a></p>
+      <p><a href="#config" style="color: #807a7a;">Configure Devise?</a></p>
+      <p><a href="#model" style="color: #807a7a;">Setup user model ?</a></p>
+      <p><a href="#link" style="color: #807a7a;">Add Sign_up and login link?</a></p>
+      <p><a href="#command" style="color: #807a7a;">Basic Command?</a></p>
+      <p><a href="#ConfigureViews" style="color: #807a7a;">Configuration Views?</a></p>
+      <p><a href="#ConfigureController" style="color: #807a7a;">Configuration Controller?</a></p>
+
+
+
+    </div>
+    <div class="col-6">
+      <%= yield %>
+    </div>
+    <div class="col-3" style="justify-content:center">
+        <div class="container" style="position: fixed;">
+          <div class="card" style="width: 18rem;">
+            <%= image_tag("auther")%>
+            <div class="card-body">
+              <h5 class="card-title">Muhammad Saad Siddique</h5>
+              <p class="card-text">Muhammad Saad ruby on rails developer. Recently joining as a ruby on rails developer in techcreatix software house in lahore</p>
+          
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+</div>
+<%= render '../views/shared/footer'%>
+   
+  </body>
+</html>
